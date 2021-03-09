@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 31.25rem;
     margin: 0 auto;
 }
 
@@ -26,62 +26,59 @@ body {
     margin-top: 1rem;
 }
 
+h2 {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
 .featured {
     margin-bottom: 2rem;
+    margin-right: 0.25rem;
 }
 
-h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-a {
+.button {
     display: block;
     color:black;
     text-decoration:none;
     font-weight:bold;
     background-color: #ffffff;
-    border:2px solid #DB1F5F;
+    border: 2px solid #DB1F5F;
     border-radius: 4px;
     transition: all 200ms ease-in-out;
+    box-shadow: 8px 8px 0px 0px #DB1F5F;
 }
 
-a:hover {
-    transform: translateY(-1px);
-    -webkit-box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
-    -moz-box-shadow: 0px 4px 5px rgba(0,0,0,0.1);
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
+.button:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 4px 4px 0px 0px #DB1F5F;
 }
 
 .featured a {
     margin: 0rem 1rem 1rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     padding: 1rem 2rem;
 }
 
 .social-media {
     display: flex;
-    justify-content: space-between;
     margin-left: 1rem;
     margin-right: 1rem;
+    justify-content: center;
 }
 
 .social-media a {
-    flex: 1;
     padding: 0.5rem 1rem;
-    font-size: 1.75rem;    
-    margin-right: 10px;
+    font-size: 2rem;    
+    margin-right: 0.625rem;
+    color: #000000;
+    transition: all 200ms ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.075);
 }
 
 .social-media a:last-child {
     margin-right: 0px;
 }
-
-.social-media a .fa-twitter {
-    color:#55acee;
-}
-
-.social-media .fa-instagram {
-    color: #DB1F5F;
-}
-
